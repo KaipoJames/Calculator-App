@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(207, 206, 206);
+}
+.calculator {
+  position: relative;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 34rem;
+  min-height: 90vh;
+  background: rgb(73, 138, 102);
+  border: 1px solid rgb(55, 104, 77);
+  border-radius: 16px;
+}
+
+.screen {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  width: 91%;
+  min-height: 6rem;
+  background: rgb(26, 22, 22);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.screen #display {
+  color: white;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.screen h5 {
+  position: absolute;
+  color: white;
+  right: 1.5rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.numbers {
+  position: absolute;
+  bottom: 1.6rem;
+  background: rgb(48, 47, 47);
+  min-height: 65vh;
+  width: 55%;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  min-height: 4.7rem;
+  width: 4.7rem;
+  background: rgb(199, 193, 193);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+.decimal {
+  background: rgb(238, 238, 238);
+}
+.calculate {
+  background: rgb(238, 238, 238);
+}
+
+.operators {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8.9rem;
+  right: 1.5rem;
+  background: rgb(48, 47, 47);
+  min-height: 31vh;
+  width: 32%;
+  border-radius: 15px;
+}
+.operator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  width: 4rem;
+  margin: auto;
+  background: rgb(192, 167, 57);
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.options {
+  position: absolute;
+  bottom: 8rem;
+  right: 1.5rem;
+  background: rgb(48, 47, 47);
+  min-height: 15vh;
+  width: 32%;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  width: 4rem;
+  margin: auto;
+  background: rgb(233, 233, 233);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.numbers,
+.operators,
+.options {
+  background: rgb(63, 62, 62);
+}
+
+.number,
+.operator,
+.option {
+  cursor: pointer;
+}
+
+.number:hover,
+.operator:hover,
+.option:hover {
+  color: rgb(175, 166, 37);
+  background: rgb(209, 208, 208);
+}
+
+.number:hover {
+  font-size: 2.3rem;
+}
+.operator:hover {
+  font-size: 2.3rem;
+}
+.option:hover {
+  font-size: 1.8rem;
+}
